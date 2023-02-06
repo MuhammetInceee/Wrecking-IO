@@ -5,9 +5,9 @@ namespace WreckingOI.Character
 {
     public class AIPlayer : Character
     {
-        public override void Movement()
+        protected override void Movement()
         {
-            
+            base.Movement();
         }
     }
 }
