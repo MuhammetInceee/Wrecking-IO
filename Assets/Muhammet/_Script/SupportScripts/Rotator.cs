@@ -4,49 +4,57 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class Rotator : MonoBehaviour
+namespace WreckingOI.SupportScripts
 {
-    [SerializeField] private List<Transform> objectList;
-    [SerializeField] private float rotateSpeed;
-
-    [SerializeField] private bool isForward;
-    
-    [SerializeField] private bool x;
-    [SerializeField] private bool y;
-    [SerializeField] private bool z;
-
-    private void Update()
+    public class Rotator : MonoBehaviour
     {
-        Rotate();
-    }
+        [SerializeField] private List<Transform> objectList;
+        [SerializeField] private float rotateSpeed;
 
-    private void Rotate()
-    {
-        foreach (Transform objects in objectList)
+        [SerializeField] private bool isForward;
+
+        [SerializeField] private bool x;
+        [SerializeField] private bool y;
+        [SerializeField] private bool z;
+
+        private void Update()
         {
-            if (x && !y && !z && isForward)
+            Rotate();
+        }
+
+        private void Rotate()
+        {
+            foreach (Transform objects in objectList)
             {
-                objects.Rotate(Vector3.right * rotateSpeed);
-            }
-            if (x && !y && !z && !isForward)
-            {
-                objects.Rotate(Vector3.left * rotateSpeed);
-            }
-            if (!x && y && !z && isForward)
-            {
-                objects.Rotate(Vector3.up * rotateSpeed);
-            }
-            if (!x && y && !z && !isForward)
-            {
-                objects.Rotate(Vector3.down * rotateSpeed);
-            }            
-            if (!x && !y && z && isForward)
-            {
-                objects.Rotate(Vector3.forward * rotateSpeed);
-            }            
-            if (!x && !y && z && !isForward)
-            {
-                objects.Rotate(Vector3.back * rotateSpeed);
+                if (x && !y && !z && isForward)
+                {
+                    objects.Rotate(Vector3.right * rotateSpeed);
+                }
+
+                if (x && !y && !z && !isForward)
+                {
+                    objects.Rotate(Vector3.left * rotateSpeed);
+                }
+
+                if (!x && y && !z && isForward)
+                {
+                    objects.Rotate(Vector3.up * rotateSpeed);
+                }
+
+                if (!x && y && !z && !isForward)
+                {
+                    objects.Rotate(Vector3.down * rotateSpeed);
+                }
+
+                if (!x && !y && z && isForward)
+                {
+                    objects.Rotate(Vector3.forward * rotateSpeed);
+                }
+
+                if (!x && !y && z && !isForward)
+                {
+                    objects.Rotate(Vector3.back * rotateSpeed);
+                }
             }
         }
     }
