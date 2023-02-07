@@ -3,7 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - EngineCar
+  - Door2Car
+  - HoodCar
+  - Wheel3Car
+  - Wheel1Car
+  - Wheel2Car
+  - TrunkCar
+  - Door1Car
+  - Wheel4Car
+  - Water
   layers:
   - Default
   - TransparentFX
@@ -11,8 +21,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - Ball
+  - MainPlayer
   - 
   - 
   - 
