@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c302b6eaf9c4c668a5448f53a0a7772, type: 3}
   m_Name: UserInputController
   m_EditorClassIdentifier: 
-  movementSpeed: 3
+  movementSpeed: 10
   rotateSpeed: 15
