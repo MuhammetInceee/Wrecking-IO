@@ -11,6 +11,7 @@ namespace WreckingOI.UserInput
 
 
         public bool IsStop => joystick.Horizontal == 0 && joystick.Vertical == 0;
+        public float JoystickHorizontal => joystick.Horizontal;
 
         public Vector3 CalculateMoveVector(float movementSpeed)
         {

@@ -9,7 +9,7 @@ namespace WreckingOI.Character
     public class Character : MonoBehaviour
     {
         protected Rigidbody Rb;
-
+        
         protected virtual void Awake()
         {
             Rb = GetComponent<Rigidbody>();

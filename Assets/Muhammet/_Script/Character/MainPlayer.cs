@@ -9,6 +9,8 @@ namespace WreckingOI.Character
     {
         private JoystickInput _joystickInput;
         private UserInputSO _userInput;
+        
+        
 
         protected override void Awake()
         {
@@ -36,7 +38,6 @@ namespace WreckingOI.Character
             
             Rb.MovePosition(Rb.position + _joystickInput.CalculateMoveVector(_userInput.MovementSpeed));
         }
-        
 
         private void ResourcesLoad()
         {
