@@ -7,6 +7,9 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Muhammet/_Script/SupportScripts/Rotator.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -79,7 +82,8 @@
       <updated>1675692641576</updated>
       <workItem from="1675692645292" duration="12000" />
       <workItem from="1675692821842" duration="376000" />
-      <workItem from="1675693673367" duration="4409000" />
+      <workItem from="1675693673367" duration="5004000" />
+      <workItem from="1675758697994" duration="1804000" />
     </task>
     <servers />
   </component>

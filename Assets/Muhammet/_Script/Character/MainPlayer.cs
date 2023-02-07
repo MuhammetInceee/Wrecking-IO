@@ -1,4 +1,5 @@
-﻿using TMPro;
+﻿using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using WreckingOI.UserInput;
 
@@ -35,6 +36,7 @@ namespace WreckingOI.Character
             
             Rb.MovePosition(Rb.position + _joystickInput.CalculateMoveVector(_userInput.MovementSpeed));
         }
+        
 
         private void ResourcesLoad()
         {
