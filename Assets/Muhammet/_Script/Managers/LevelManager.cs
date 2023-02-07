@@ -24,7 +24,6 @@ namespace WreckingOI.Managers
             _playerStateManager = FindObjectOfType<PlayerStateManager>();
 
             StartCoroutine(LevelSpaceNarrower());
-
         }
 
         private IEnumerator LevelSpaceNarrower()

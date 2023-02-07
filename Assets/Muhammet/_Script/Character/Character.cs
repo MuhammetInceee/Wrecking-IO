@@ -20,9 +20,6 @@ namespace WreckingOI.Character
             Movement();
         }
 
-        protected virtual void Movement()
-        {
-            
-        }
+        protected virtual void Movement() { }
     }
 }

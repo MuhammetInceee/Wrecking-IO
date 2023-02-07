@@ -8,6 +8,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Muhammet/_Script/Character/AICharacter/AISettingsSO.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Muhammet/_Script/Character/AICharacter/GetPoint.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Muhammet/_Script/Managers/LevelManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Muhammet/_Script/SupportScripts/Rotator.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -84,7 +86,7 @@
       <workItem from="1675692645292" duration="12000" />
       <workItem from="1675692821842" duration="376000" />
       <workItem from="1675693673367" duration="5004000" />
-      <workItem from="1675758697994" duration="12274000" />
+      <workItem from="1675758697994" duration="16125000" />
     </task>
     <servers />
   </component>

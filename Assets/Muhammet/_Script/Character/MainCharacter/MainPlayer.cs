@@ -3,7 +3,7 @@ using TMPro;
 using UnityEngine;
 using WreckingOI.UserInput;
 
-namespace WreckingOI.Character
+namespace WreckingOI.Character.Main
 {
     public class MainPlayer : Character
     {
