@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace WreckingOI.Managers
@@ -9,10 +10,10 @@ namespace WreckingOI.Managers
         [SerializeField] private List<float> levelDurations;
         public List<float> LevelDurations => levelDurations;
 
-        [SerializeField] private float colorChangeDuration;
+        [TabGroup("Durations")][SerializeField] private float colorChangeDuration;
         public float ColorChangeDuration => colorChangeDuration;
 
-        [SerializeField] private float scaleZeroDuration;
+        [TabGroup("Durations")][SerializeField] private float scaleZeroDuration;
         public float ScaleZeroDuration => scaleZeroDuration;
     }
 }

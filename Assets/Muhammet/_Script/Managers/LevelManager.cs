@@ -14,6 +14,10 @@ namespace WreckingOI.Managers
         
         [SerializeField] private List<LevelHolder> levelHolder;
 
+
+        private bool IsGameOnPlay => _playerStateManager.GetCurrentState() != PlayerStateHolder.Play;
+        private bool IsAllGroundDestroy => _levelCount >= levelHolder.Count;
+
         private void Awake()
         {
             ResourcesLoad();
@@ -25,8 +29,7 @@ namespace WreckingOI.Managers
 
         private IEnumerator LevelSpaceNarrower()
         {
-            if(_playerStateManager.GetCurrentState() != PlayerStateHolder.Play) yield break;
-            
+            if(IsGameOnPlay || IsAllGroundDestroy) yield break;
             
             yield return new WaitForSeconds(_levelManagerSettings.LevelDurations[_levelCount]);
 
@@ -40,12 +43,12 @@ namespace WreckingOI.Managers
                 sequence.Append(gO.transform.DOScale(Vector3.zero, _levelManagerSettings.ScaleZeroDuration));
                 sequence.OnComplete(() =>
                 {
-                    Destroy(gO);
-                    _levelCount++;
-                    StartCoroutine(LevelSpaceNarrower());
+                    gO.SetActive(false);
                 });
             }
-            
+
+            _levelCount++;
+            StartCoroutine(LevelSpaceNarrower());
         }
 
         
