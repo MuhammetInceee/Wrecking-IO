@@ -51,12 +51,13 @@ namespace WreckingOI.Managers
             if (!allCharacters.Contains(_mainPlayer))
             {
                 print("LooseScreenComes");
-                Time.timeScale = 0;
+                
             }
 
             else if (allCharacters.Contains(_mainPlayer) && allCharacters.Count == 1)
             {
                 print("LevelWonScreenComes");
+                Time.timeScale = 0;
             }
         }
     }

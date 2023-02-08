@@ -24,8 +24,7 @@ namespace WreckingOI.Character
 
         protected virtual void Movement() { }
         protected virtual void Hit() { }
-        protected virtual void SetTarget() { }
-
+        
         public void DestroyYourself()
         {
             Destroy(transform.root.gameObject);

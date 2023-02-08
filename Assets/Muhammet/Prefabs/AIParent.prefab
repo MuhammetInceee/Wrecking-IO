@@ -221,7 +221,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: cbdf2b14b2ee83d419d3b8fdb2902374, type: 2}
+  - {fileID: 2100000, guid: b0eecdf41fc4421498b6ef43404c875d, type: 2}
   - {fileID: 722302280362585109, guid: ceb0ad53c84335c4b9cbc2c2c300afc5, type: 3}
   - {fileID: -3617424376172020946, guid: ceb0ad53c84335c4b9cbc2c2c300afc5, type: 3}
   m_StaticBatchInfo:
@@ -307,12 +307,12 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: -3617424376172020946, guid: ceb0ad53c84335c4b9cbc2c2c300afc5, type: 3}
-  - {fileID: 2100000, guid: cbdf2b14b2ee83d419d3b8fdb2902374, type: 2}
+  - {fileID: 2100000, guid: b0eecdf41fc4421498b6ef43404c875d, type: 2}
   - {fileID: 2100000, guid: e496c287efcf18844bdcefd4aec137a1, type: 2}
-  - {fileID: 2100000, guid: cbdf2b14b2ee83d419d3b8fdb2902374, type: 2}
+  - {fileID: 2100000, guid: b0eecdf41fc4421498b6ef43404c875d, type: 2}
   - {fileID: 2100000, guid: e496c287efcf18844bdcefd4aec137a1, type: 2}
   - {fileID: 2100000, guid: 069b3e5bd4d921747b2b25cb66568bf4, type: 2}
-  - {fileID: 2100000, guid: cbdf2b14b2ee83d419d3b8fdb2902374, type: 2}
+  - {fileID: 2100000, guid: b0eecdf41fc4421498b6ef43404c875d, type: 2}
   - {fileID: 2100000, guid: e496c287efcf18844bdcefd4aec137a1, type: 2}
   - {fileID: 2100000, guid: 01486b7ee86f62244a606e0cb0fa7ce7, type: 2}
   m_StaticBatchInfo:
@@ -611,7 +611,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: cbdf2b14b2ee83d419d3b8fdb2902374, type: 2}
+  - {fileID: 2100000, guid: b0eecdf41fc4421498b6ef43404c875d, type: 2}
   - {fileID: 722302280362585109, guid: ceb0ad53c84335c4b9cbc2c2c300afc5, type: 3}
   - {fileID: -3617424376172020946, guid: ceb0ad53c84335c4b9cbc2c2c300afc5, type: 3}
   m_StaticBatchInfo:
@@ -696,7 +696,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: cbdf2b14b2ee83d419d3b8fdb2902374, type: 2}
+  - {fileID: 2100000, guid: b0eecdf41fc4421498b6ef43404c875d, type: 2}
   - {fileID: 722302280362585109, guid: ceb0ad53c84335c4b9cbc2c2c300afc5, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -781,7 +781,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: -3617424376172020946, guid: ceb0ad53c84335c4b9cbc2c2c300afc5, type: 3}
-  - {fileID: 2100000, guid: cbdf2b14b2ee83d419d3b8fdb2902374, type: 2}
+  - {fileID: 2100000, guid: b0eecdf41fc4421498b6ef43404c875d, type: 2}
   - {fileID: 722302280362585109, guid: ceb0ad53c84335c4b9cbc2c2c300afc5, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -1367,7 +1367,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: -3617424376172020946, guid: ceb0ad53c84335c4b9cbc2c2c300afc5, type: 3}
-  - {fileID: 2100000, guid: cbdf2b14b2ee83d419d3b8fdb2902374, type: 2}
+  - {fileID: 2100000, guid: b0eecdf41fc4421498b6ef43404c875d, type: 2}
   - {fileID: 722302280362585109, guid: ceb0ad53c84335c4b9cbc2c2c300afc5, type: 3}
   - {fileID: 2100000, guid: 069b3e5bd4d921747b2b25cb66568bf4, type: 2}
   m_StaticBatchInfo:
@@ -1598,7 +1598,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: cbdf2b14b2ee83d419d3b8fdb2902374, type: 2}
+  - {fileID: 2100000, guid: b0eecdf41fc4421498b6ef43404c875d, type: 2}
   - {fileID: 722302280362585109, guid: ceb0ad53c84335c4b9cbc2c2c300afc5, type: 3}
   - {fileID: -3617424376172020946, guid: ceb0ad53c84335c4b9cbc2c2c300afc5, type: 3}
   m_StaticBatchInfo:
@@ -1769,8 +1769,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.8354461, y: 1.5813282, z: 4.8375444}
-  m_Center: {x: -0.013770938, y: 0.62740886, z: -0.027542114}
+  m_Size: {x: 1.8354461, y: 1.3491846, z: 4.8375444}
+  m_Center: {x: -0.013770938, y: 0.7434806, z: -0.027542114}
 --- !u!114 &2959897814921968171
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1785,6 +1785,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   theOtherCharacters:
   - {fileID: 0}
+  targetMesh: {fileID: 2959897813661631860}
 --- !u!195 &2959897814921968164
 NavMeshAgent:
   m_ObjectHideFlags: 0

@@ -1,7 +1,9 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.AI;
+using Random = UnityEngine.Random;
 
 
 namespace WreckingOI.Character.AI
@@ -13,24 +15,19 @@ namespace WreckingOI.Character.AI
         private GameObject _targetPos;
 
         private bool _canHit = true;
-
         
-
         protected override void Awake()
         {
             base.Awake();
             GetReference();
+            ResourcesLoad();
             SetTarget();
+
         }
 
         protected override void Update()
         {
             base.Update();
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                
-            }
-
             HitCheck();
         }
 
@@ -39,7 +36,7 @@ namespace WreckingOI.Character.AI
             _agent.SetDestination(_targetPos.transform.position);
         }
 
-        protected override void SetTarget()
+        public void SetTarget()
         {
             _targetPos = theOtherCharacters[Random.Range(0, theOtherCharacters.Count)];
             transform.DOLookAt(_targetPos.transform.position, 0.5f);
@@ -100,7 +97,22 @@ namespace WreckingOI.Character.AI
         private void GetReference()
         {
             _agent = GetComponent<NavMeshAgent>();
+        }
+
+        private void ResourcesLoad()
+        {
             _aISettings = Resources.Load("Characters/AICharacters/AICharacterSettings") as AISettingsSO;
+        }
+        
+        private void OnDestroy()
+        {
+            for (int i = 0; i < theOtherCharacters.Count; i++)
+            {
+                if (theOtherCharacters[i].transform.root.name != "MainPlayerRoot")
+                {
+                    theOtherCharacters[i].GetComponent<AIPlayer>().SetTarget();
+                }
+            }
         }
     }
 }
