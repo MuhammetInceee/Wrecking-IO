@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using WreckingOI.Managers;
 using WreckingOI.UserInput;
 
 namespace WreckingOI.Character.Main
@@ -9,7 +10,7 @@ namespace WreckingOI.Character.Main
     {
         private JoystickInput _joystickInput;
         private UserInputSO _userInput;
-        
+        private PlayerStateManager _playerState;
         
 
         protected override void Awake()
@@ -21,6 +22,8 @@ namespace WreckingOI.Character.Main
 
         protected override void Movement()
         {
+            if(_playerState.GetCurrentState() != PlayerStateHolder.Play) return;
+            
             if (_joystickInput.IsStop)
             {
                 // idle pose
@@ -47,6 +50,7 @@ namespace WreckingOI.Character.Main
         private void GetReferences()
         {
             _joystickInput = GetComponent<JoystickInput>();
+            _playerState = FindObjectOfType<PlayerStateManager>();
         }
     }
 }

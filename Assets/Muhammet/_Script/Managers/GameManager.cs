@@ -9,7 +9,7 @@ namespace WreckingOI.Managers
     public class GameManager : MonoBehaviour
     {
         private GameObject _mainPlayer;
-
+        private PlayerStateManager _playerState;
 
         public List<GameObject> allCharacters;
 
@@ -26,7 +26,7 @@ namespace WreckingOI.Managers
 
         private void Awake()
         {
-            _mainPlayer = FindObjectOfType<MainPlayer>().gameObject;
+            GetReference();
         }
 
         private void SubscribeEvent()
@@ -50,15 +50,21 @@ namespace WreckingOI.Managers
         {
             if (!allCharacters.Contains(_mainPlayer))
             {
-                print("LooseScreenComes");
-                
+                UISignals.OnLevelFail.Invoke();
+                _playerState.SetNewPlayerState(PlayerStateHolder.Wait);
             }
 
             else if (allCharacters.Contains(_mainPlayer) && allCharacters.Count == 1)
             {
-                print("LevelWonScreenComes");
-                Time.timeScale = 0;
+                UISignals.OnLevelSuccess.Invoke();
+                _playerState.SetNewPlayerState(PlayerStateHolder.Wait);
             }
+        }
+
+        private void GetReference()
+        {
+            _mainPlayer = FindObjectOfType<MainPlayer>().gameObject;
+            _playerState = FindObjectOfType<PlayerStateManager>();
         }
     }
 }
