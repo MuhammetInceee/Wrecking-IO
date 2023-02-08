@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Lofelt.NiceVibrations;
 
 namespace WreckingOI.SupportScripts.Collisions
 {
@@ -20,6 +21,7 @@ namespace WreckingOI.SupportScripts.Collisions
             {
                 CinemachineShake.Instance.ShakeCamera(1, 0.5f);
                 _hitParticle.Play();
+                HapticPatterns.PlayConstant(1,0,1);
             }
         }
     }
