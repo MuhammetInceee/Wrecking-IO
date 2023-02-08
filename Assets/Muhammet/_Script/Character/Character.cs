@@ -10,6 +10,8 @@ namespace WreckingOI.Character
     {
         protected Rigidbody Rb;
         
+        [SerializeField] protected List<GameObject> theOtherCharacters;
+        
         protected virtual void Awake()
         {
             Rb = GetComponent<Rigidbody>();
@@ -21,5 +23,12 @@ namespace WreckingOI.Character
         }
 
         protected virtual void Movement() { }
+        protected virtual void Hit() { }
+        protected virtual void SetTarget() { }
+
+        public void DestroyYourself()
+        {
+            Destroy(transform.root.gameObject);
+        }
     }
 }

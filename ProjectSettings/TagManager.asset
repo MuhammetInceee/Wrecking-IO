@@ -4,16 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - EngineCar
-  - Door2Car
-  - HoodCar
-  - Wheel3Car
-  - Wheel1Car
-  - Wheel2Car
-  - TrunkCar
-  - Door1Car
-  - Wheel4Car
   - Water
+  - Character
   layers:
   - Default
   - TransparentFX
