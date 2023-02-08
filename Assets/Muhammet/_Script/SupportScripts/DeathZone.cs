@@ -11,7 +11,7 @@ namespace WreckingOI.SupportScripts.Collisions
             if (collision.collider.TryGetComponent(out Character.Character character))
             {
                 CoreGameSignals.OnDeath.Invoke(character.gameObject);
-                character.DestroyYourself(); 
+                StartCoroutine(character.DestroyYourself()); 
                 CoreGameSignals.OnLevelCheck.Invoke();
             }
         }

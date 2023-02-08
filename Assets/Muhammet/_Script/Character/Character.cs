@@ -11,7 +11,7 @@ namespace WreckingOI.Character
         protected Rigidbody Rb;
         
         [SerializeField] protected List<GameObject> theOtherCharacters;
-        
+        [SerializeField] protected ParticleSystem destroyParticle;
         protected virtual void Awake()
         {
             Rb = GetComponent<Rigidbody>();
@@ -25,8 +25,10 @@ namespace WreckingOI.Character
         protected virtual void Movement() { }
         protected virtual void Hit() { }
         
-        public void DestroyYourself()
+        public IEnumerator DestroyYourself()
         {
+            destroyParticle.Play();
+            yield return new WaitForSeconds(1f);
             Destroy(transform.root.gameObject);
         }
     }
