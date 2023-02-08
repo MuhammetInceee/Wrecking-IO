@@ -9,5 +9,8 @@ namespace WreckingOI.Character.AI
     {
         [SerializeField] private float radius;
         public float Radius => radius;
+
+        [SerializeField] private float minimumHitRange;
+        public float MinimumHitRange => minimumHitRange;
     }
 }

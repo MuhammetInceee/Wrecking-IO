@@ -15,7 +15,7 @@ namespace WreckingOI.Character
             Rb = GetComponent<Rigidbody>();
         }
 
-        private void Update()
+        protected virtual void Update()
         {
             Movement();
         }

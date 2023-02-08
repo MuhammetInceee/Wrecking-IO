@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0df0e1869ad786a4093f6f85fe54f333, type: 3}
   m_Name: AICharacterSettings
   m_EditorClassIdentifier: 
-  radius: 3
+  radius: 5
+  minimumHitRange: 4.5
